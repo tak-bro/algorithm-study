@@ -1,5 +1,23 @@
 ## CodeWars
 
+#### Bouncing ball
+- A child plays with a ball on the nth floor of a big building. The height of this floor is known:
+    - (float parameter "h" in meters, h > 0) .
+- He lets out the ball. The ball rebounds for example to two-thirds: of its height.
+    - (float parameter "bounce", 0 < bounce < 1) 
+- His mother looks out of a window that is 1.5 meters from the ground:
+    - (float parameters window < h).
+- How many times will the mother see the ball either falling or bouncing in front of the window
+    - (return a positive integer unless conditions are not fulfilled in which case return -1) ?
+- Note: You will admit that the ball can only be seen if the height of the rebouncing ball is stricty greater than the window parameter.
+- Example:
+```
+h = 3, bounce = 0.66, window = 1.5, result is 3
+h = 3, bounce = 1, window = 1.5, result is -1
+```
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BouncingBalls.cpp)
+
+
 #### Parts of a list
 - Write a function partlist that gives all the ways to divide a list (an array) of at least two elements into two non-empty parts.
     - Each two non empty parts will be in a pair (or an array for languages without tuples or a structin C - C: see Examples test Cases - )
