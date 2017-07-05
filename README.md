@@ -1,5 +1,33 @@
 ## CodeWars
 
+#### Don't give me five!
+- In this kata you get the start number and the end number of a region and should return the count of all numbers except numbers with a 5 in it. The start and the end number are both inclusive!
+- The result may contain fives. ;-)
+- The start number will always be smaller than the end number. Both numbers can be also negative!
+- Examples:
+```
+1,9 -> 1,2,3,4,6,7,8,9 -> Result 8
+4,17 -> 4,6,7,8,9,10,11,12,13,14,16,17 -> Result 12
+```
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DontGiveMeFive.cpp)
+```
+// Best Solution I think
+bool containsFive(int num) {
+  for (; num > 0; num /= 10) {
+    if (num%10 == 5) { return true; }
+  }
+  return false;
+}
+
+int dontGiveMeFive(int start, int end) {
+  int count = 0;
+  for (int i = start; i <= end; ++i) {
+    if (!containsFive(abs(i))) { count++; }
+  }
+  return count;
+}
+```
+
 #### Bouncing ball
 - A child plays with a ball on the nth floor of a big building. The height of this floor is known:
     - (float parameter "h" in meters, h > 0) .
@@ -15,7 +43,7 @@
 h = 3, bounce = 0.66, window = 1.5, result is 3
 h = 3, bounce = 1, window = 1.5, result is -1
 ```
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BouncingBalls.cpp)
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BouncingBalls.cpp)
 
 
 #### Parts of a list
@@ -28,7 +56,7 @@ h = 3, bounce = 1, window = 1.5, result is -1
 a = ["az", "toto", "picaro", "zone", "kiwi"] --> 
 answer: [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az toto picaro", "zone kiwi"], ["az toto picaro zone", "kiwi"]]
 ```
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/PartOfaList.cpp)
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/PartOfaList.cpp)
 
 
 #### Couting Duplicates
@@ -42,7 +70,7 @@ answer: [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az 
 "Indivisibilities" -> 2 # 'i' and 's'
 "aa11" -> 2 # 'a' and '1'
 ```
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CoutingDuplicates.cpp)
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CoutingDuplicates.cpp)
 
 #### Averages of numbers
 - Write a method, that gets an array of integer-numbers and return an array of the averages of each integer-number and his follower, if there is one.
@@ -51,7 +79,7 @@ answer: [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az 
 Input:  [ 1, 3, 5, 1, -10]
 Output:  [ 2, 4, 3, -4.5]
 ```
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/AveragesNumbers.cpp)
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/AveragesNumbers.cpp)
 
 
 ----
