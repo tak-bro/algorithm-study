@@ -1,5 +1,22 @@
 ## CodeWars
 
+#### Complete The Pattern #8 - Number Pyramid
+- You have to write a function pattern which creates the following Pattern(See Examples) upto n(parameter) number of rows.
+- If the Argument is 0 or a Negative Integer then it should return "" i.e. empty string.
+- All the lines in the pattern have same length i.e equal to the number of characters in the last line. Range of n is (-∞,100]
+- Examples: 
+```
+pattern(5):
+
+    1    
+   121   
+  12321  
+ 1234321 
+123454321
+```
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CompleteThePattern.cpp)
+  - very clever
+
 #### Count the Digit
 - Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer. Square all numbers k (0 <= k <= n) between 0 and n. Count the numbers of digits d used in the writing of all the k**2. Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
 - Examples:
