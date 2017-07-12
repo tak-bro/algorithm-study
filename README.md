@@ -12,6 +12,7 @@ where the first number is the time in tenth of second and the second number the 
 max_ball(15) should return 4
 max_ball(25) should return 7
 ```
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BallUpwards.cpp)
 
 #### Complete The Pattern #8 - Number Pyramid
 - You have to write a function pattern which creates the following Pattern(See Examples) upto n(parameter) number of rows.
