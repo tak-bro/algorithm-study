@@ -1,5 +1,36 @@
 ## CodeWars
 
+#### Sum The Tree
+- Given a node object representing a binary tree:
+```
+Node:
+  value: <int>,
+  left: <Node> or null,
+  right: <Node> or null
+```
+
+- In C++:
+```
+struct node
+{
+  int value;
+  node* left;
+  node* right;
+}
+```
+- write a function that returns the sum of all values, including the root.
+- Examples:
+```
+10
+| \
+1  2
+=> 13
+```
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SumOfTrees.cpp)
+
+----
+
+
 #### Ball Upwards
 - You throw a ball vertically upwards with an initial speed v (in km per hour). 
 - The height h of the ball at each time t is given by h = v*t - 0.5*g*t*t where g is Earth's gravity (g ~ 9.81 m/s**2). 
@@ -13,6 +44,8 @@ max_ball(15) should return 4
 max_ball(25) should return 7
 ```
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BallUpwards.cpp)
+
+----
 
 #### Complete The Pattern #8 - Number Pyramid
 - You have to write a function pattern which creates the following Pattern(See Examples) upto n(parameter) number of rows.
@@ -30,6 +63,8 @@ pattern(5):
 ```
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CompleteThePattern.cpp)
   - very clever
+   
+----
 
 #### Count the Digit
 - Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer. Square all numbers k (0 <= k <= n) between 0 and n. Count the numbers of digits d used in the writing of all the k**2. Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
@@ -46,6 +81,8 @@ so there are 11 digits `1` for the squares of numbers between 0 and 25.
 > Note that 121 has twice the digit 1.
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/HelpTheBookseller.cpp)
   - I added someone else's solution instead of my solution since it is clever solution.
+
+----
 
 #### Help the bookseller.
 - A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. Each book has a code c of 3, 4, 5 or more capitals letters. The 1st letter of a code is the capital letter of the book category. In the bookseller's stocklist each code c is followed by a space and by a positive integer n (int n >= 0) which indicates the quantity of books of this code in stock.
@@ -64,6 +101,8 @@ L = {"ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"}.
 ```
 - where A, B, C, W are the categories, 20 is the sum of the unique book of category A, 114 the sum corresponding to "BKWRK" and "BTSQZ", 50 corresponding to "CDXEF" and 0 to category 'W' since there are no code beginning with W. If L or M are empty return string is "" (Clojure should return an empty array instead).
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/HelpTheBookseller.cpp)
+
+----
 
 
 #### Don't give me five!
@@ -94,6 +133,8 @@ int dontGiveMeFive(int start, int end) {
 }
 ```
 
+----
+
 #### Bouncing ball
 - A child plays with a ball on the nth floor of a big building. The height of this floor is known:
     - (float parameter "h" in meters, h > 0) .
@@ -111,6 +152,8 @@ h = 3, bounce = 1, window = 1.5, result is -1
 ```
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BouncingBalls.cpp)
 
+----
+
 
 #### Parts of a list
 - Write a function partlist that gives all the ways to divide a list (an array) of at least two elements into two non-empty parts.
@@ -125,6 +168,8 @@ answer: [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az 
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/PartOfaList.cpp)
 
 
+----
+
 #### Couting Duplicates
 - Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphanumeric characters, including digits, uppercase and lowercase alphabets.
 - Example:
@@ -137,6 +182,8 @@ answer: [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az 
 "aa11" -> 2 # 'a' and '1'
 ```
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CoutingDuplicates.cpp)
+
+----
 
 #### Averages of numbers
 - Write a method, that gets an array of integer-numbers and return an array of the averages of each integer-number and his follower, if there is one.
