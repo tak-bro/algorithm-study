@@ -1,5 +1,19 @@
 ## CodeWars
 
+#### Directions Reduction
+- Write a function dirReduc which will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side).
+- The Haskell version takes a list of directions with data Direction = North | East | West | South. The Clojure version returns nil when the path is reduced to nothing. The Rust version takes a slice of enum Direction {NORTH, SOUTH, EAST, WEST}.
+- Examples: 
+```
+Examples
+dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]) => ["WEST"]
+dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]) => []
+```
+
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DirectionsReduction.cpp)
+
+----
+
 #### Sort the odd
 - You have an array of numbers.
 - Your task is to sort ascending odd numbers but even numbers must be on their places.
@@ -8,6 +22,8 @@
 ```
 sortArray([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4]
 ```
+
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SortOdd.cpp)
 
 ----
 
