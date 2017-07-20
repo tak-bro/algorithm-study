@@ -1,5 +1,17 @@
 ## CodeWars
 
+#### Integers: Recreation One
+- Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the squared divisors is 2500 which is 50 * 50, a square!
+- Given two integers m, n (1 <= m <= n) we want to find all integers between m and n whose sum of squared divisors is itself a square. 42 is such a number.
+- The result will be an array of arrays(in C an array of Pair), each subarray having two elements, first the number whose squared divisors is a square and then the sum of the squared divisors.
+- Examples:
+```
+list_squared(1, 250) --> [[1, 1], [42, 2500], [246, 84100]]
+list_squared(42, 250) --> [[42, 2500], [246, 84100]]
+```
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/ListSquared.js)
+  - not my solution 
+
 #### Unwanted dollars
 - do you put the $ sign in, or not? Inevitably, some people will type a $ sign and others will leave it out. The instructions could be made clearer - but that won't help those annoying people who never read instructions anyway.
 - A better solution is to write code that can handle the input whether it includes a $ sign or not.
