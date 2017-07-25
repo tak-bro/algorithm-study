@@ -1,5 +1,16 @@
 ## CodeWars
 
+#### A disguised sequence (I)
+- Given u0 = 1, u1 = 2 and the relation 6unun+1-5unun+2+un+1un+2 = 0 calculate un for any integer n >= 0.
+- Examples
+```
+fct(n) returns un: fct(17) -> 131072, fct(21) -> 2097152
+```
+- Remark: You can take two points of view to do this kata:
+  - the first one purely algorithmic from the definition of un
+  - the second one - not at all mandatory, but as a complement - is to get a bit your head around and find which sequence is hidden behind un.
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DisguisedSequence.js)
+
 #### Integers: Recreation One
 - Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the squared divisors is 2500 which is 50 * 50, a square!
 - Given two integers m, n (1 <= m <= n) we want to find all integers between m and n whose sum of squared divisors is itself a square. 42 is such a number.
