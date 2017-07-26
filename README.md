@@ -1,4 +1,40 @@
-## CodeWars
+# CodeWars
+
+### Table of Contents 
+- [Mr. Safety's treasures](#mr.-safety's-treasures)
+- [A disguised sequence (I)](#a-disguised-sequence-(I))
+- [Integers: Recreation One](integers:-recreation-one)
+- [Unwanted dollars](unwanted-dollars)
+- [Directions Reduction](directions-reduction)
+- [Sort the odd](sort-the-odd)
+- [Sum The Tree](sum-the-tree)
+- [Ball Upwards](ball-upwards)
+- [Complete The Pattern #8 - Number Pyramid](complete-the-pattern-#8---number-pyramid)
+- [Count the Digit](count-the-digit)
+- [Help the bookseller](help-the-bookseller.)
+- [Don't give me five!](don't-give-me-five!)
+- [Bouncing ball](bouncing-ball)
+- [Parts of a list](parts-of-a-list)
+- [Couting Duplicates](couting-duplicates)
+- [Averages of numbers](averages-of-numbers)
+
+----
+
+#### Mr. Safety's treasures
+- Can you crack his numeric locks? Mr. Safety's treasures wait for you. Write an algorithm to open his numeric locks. Can you do it without his Nokia 3310?
+- Input
+  - The str or message (Python) input string consists of lowercase and upercase characters. It's a real object that you want to unlock.
+- Output
+  - Return a string that only consists of digits.
+- Example
+```
+unlock("Nokia")  // => 66542
+unlock("Valut")  // => 82588
+unlock("toilet") // => 864538
+```
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/Unlock.cpp)
+
+----
 
 #### A disguised sequence (I)
 - Given u0 = 1, u1 = 2 and the relation 6unun+1-5unun+2+un+1un+2 = 0 calculate un for any integer n >= 0.
@@ -9,7 +45,9 @@ fct(n) returns un: fct(17) -> 131072, fct(21) -> 2097152
 - Remark: You can take two points of view to do this kata:
   - the first one purely algorithmic from the definition of un
   - the second one - not at all mandatory, but as a complement - is to get a bit your head around and find which sequence is hidden behind un.
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DisguisedSequence.js)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DisguisedSequence.cpp)
+
+----
 
 #### Integers: Recreation One
 - Divisors of 42 are : 1, 2, 3, 6, 7, 14, 21, 42. These divisors squared are: 1, 4, 9, 36, 49, 196, 441, 1764. The sum of the squared divisors is 2500 which is 50 * 50, a square!
@@ -23,12 +61,16 @@ list_squared(42, 250) --> [[42, 2500], [246, 84100]]
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/ListSquared.js)
   - not my solution 
 
+----
+
 #### Unwanted dollars
 - do you put the $ sign in, or not? Inevitably, some people will type a $ sign and others will leave it out. The instructions could be made clearer - but that won't help those annoying people who never read instructions anyway.
 - A better solution is to write code that can handle the input whether it includes a $ sign or not.
 - So, we need a simple function that converts a string representing a number (possibly with a $ sign in front of it) into the number itself.
 - Remember to consider negative numbers (the - sign may come either before or after the $ sign, if there is one), and any extraneous space characters (leading, trailing, or around the $ sign) that the users might put in. You do not need to handle trailing characters other than spaces (e.g. "1.2 3"). If the given string does not represent a number, (either with or without a $ sign), return 0.0 .
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/UnwantedDollars.cpp)
+
+----
 
 
 #### Directions Reduction
