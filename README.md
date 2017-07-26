@@ -1,22 +1,22 @@
 # CodeWars
 
 ### Table of Contents 
-- [Mr. Safety's treasures](#mr.-safety's-treasures)
-- [A disguised sequence (I)](#a-disguised-sequence-(I))
-- [Integers: Recreation One](integers:-recreation-one)
-- [Unwanted dollars](unwanted-dollars)
-- [Directions Reduction](directions-reduction)
-- [Sort the odd](sort-the-odd)
-- [Sum The Tree](sum-the-tree)
-- [Ball Upwards](ball-upwards)
-- [Complete The Pattern #8 - Number Pyramid](complete-the-pattern-#8---number-pyramid)
-- [Count the Digit](count-the-digit)
-- [Help the bookseller](help-the-bookseller.)
-- [Don't give me five!](don't-give-me-five!)
-- [Bouncing ball](bouncing-ball)
-- [Parts of a list](parts-of-a-list)
-- [Couting Duplicates](couting-duplicates)
-- [Averages of numbers](averages-of-numbers)
+- [Mr. Safety's treasures](#mr-safetys-treasures)
+- [A disguised sequence (I)](#a-disguised-sequence-i)
+- [Integers: Recreation One](#integers-recreation-one)
+- [Unwanted dollars](#unwanted-dollars)
+- [Directions Reduction](#directions-reduction)
+- [Sort the odd](#sort-the-odd)
+- [Sum The Tree](#sum-the-tree)
+- [Ball Upwards](#ball-upwards)
+- [Complete The Pattern #8 - Number Pyramid](#complete-the-pattern-8---number-pyramid)
+- [Count the Digit](#count-the-digit)
+- [Help the bookseller](#help-the-bookseller)
+- [Don't give me five!](#dont-give-me-five!)
+- [Bouncing ball](#bouncing-ball)
+- [Parts of a list](#parts-of-a-list)
+- [Couting Duplicates](#couting-duplicates)
+- [Averages of numbers](#averages-of-numbers)
 
 ----
 
