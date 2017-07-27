@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [The takeWhile Function](#the-takewhile-function)
 - [Mr. Safety's treasures](#mr-safetys-treasures)
 - [A disguised sequence (I)](#a-disguised-sequence-i)
 - [Integers: Recreation One](#integers-recreation-one)
@@ -17,6 +18,22 @@
 - [Parts of a list](#parts-of-a-list)
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
+
+----
+#### The takeWhile Function
+- The first is the sequence of values, and the second is the predicate function. The function does not change the value of the original sequence.
+```
+std::function<bool (int)> isEven = [](int value)
+{
+    return abs(value) % 2 == 0;
+};
+
+std::vector<int> seq = { 2, 4, 6, 8, 1, 2, 5, 4, 3, 2 };
+
+takeWhile(seq, pred); // -> { 2, 4, 6, 8 }
+```
+- Your task is to implement the takeWhile function.
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/TakeWhile.cpp)
 
 ----
 
