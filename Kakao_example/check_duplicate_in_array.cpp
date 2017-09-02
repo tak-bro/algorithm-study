@@ -1,4 +1,3 @@
-
 #include<vector>
 #include<algorithm>
 
@@ -9,8 +8,8 @@ bool solution(vector<int> arr)
     bool answer = true;
 
     sort (arr.begin(), arr.end()); 
-    for (int i=0; i < arr.size(); i++) {
-        if (arr[i] != i+1) {
+    for (int i=1; i < arr.size()+1; i++) {
+        if (arr[i] != i) {
             return false;
         }
     }

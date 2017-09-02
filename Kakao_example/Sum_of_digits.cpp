@@ -25,8 +25,6 @@ int string2int(string n) {
 int solution(int n)
 {
     int answer = 0;
-    string tmp = int2string(n);
-    cout << tmp << endl;
 
     for (std::string::iterator itr = tmp.begin(); itr != tmp.end(); ++itr) {
         answer += char2int(*itr);
