@@ -25,10 +25,19 @@ int string2int(string n) {
 int solution(int n)
 {
     int answer = 0;
-
+    string tmp = int2string(n);
+    
     for (std::string::iterator itr = tmp.begin(); itr != tmp.end(); ++itr) {
         answer += char2int(*itr);
     }
 
     return answer;
+}
+
+// build command: clang++ Sum_of_digits.cpp -std=c++11 -O2 -Wno-unused-result
+int main() {
+    int input = 123213213;
+    int result = solution(input);
+    
+    std::cout << result << endl;
 }
