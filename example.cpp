@@ -3,6 +3,7 @@
 #include <sstream>
 #include <algorithm>
 #include <vector>
+#include <iterator> // for ostream_iterator
 
 using namespace std;
 
@@ -44,6 +45,39 @@ int string2int(string n) {
     return result;
 }
 
+// vector<string> to string
+string vector2string(const std::vector<std::string>& elements, const char* const separator)
+{
+    switch (elements.size())
+    {
+        case 0:
+            return "";
+        case 1:
+            return elements[0];
+        default:
+            std::ostringstream os; 
+            std::copy(elements.begin(), elements.end()-1, std::ostream_iterator<std::string>(os, separator));
+            os << *elements.rbegin();
+            return os.str();
+    }
+}
+
+// string to vector<string>
+vector<string> string2vector(string s, string token){
+    std::vector<std::string> v;
+
+    size_t posLast = 0, pos = 0;
+    while((pos = s.find(token, pos)) != std::string::npos) {
+        if(s[pos] != s[posLast])
+            v.push_back(s.substr(posLast, pos - posLast));
+        posLast = ++pos;
+    }
+    if(s[posLast] != 0)  // If there is no terminating token found
+        v.push_back(s.substr(posLast));
+
+    return v;
+}
+
 // return max
 int max(int a, int b)
 {
@@ -55,6 +89,7 @@ int min(int a, int b)
 {
     return a > b ? b : a;
 }
+
 
 int main() {
     cout << 2e9 << endl;

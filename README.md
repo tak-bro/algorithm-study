@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [Srot the inner ctonnet in dsnnieedcg oredr](#srot-the-inner-ctonnet-in-dsnnieedcg-oredr)
 - [Alphabet war](#alphabet-war)
 - [The takeWhile Function](#the-takewhile-function)
 - [Mr. Safety's treasures](#mr-safetys-treasures)
@@ -21,7 +22,12 @@
 - [Averages of numbers](#averages-of-numbers)
 
 ----
-####[Alpabet war](https://www.codewars.com/kata/alphabet-war-airstrike-letters-massacre/cpp)
+#### [Srot the inner ctonnet in dsnnieedcg oredr](https://www.codewars.com/kata/srot-the-inner-ctonnet-in-dsnnieedcg-oredr/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SrotTheInnerCtonnet.cpp)
+
+----
+
+#### [Alpabet war](https://www.codewars.com/kata/alphabet-war-airstrike-letters-massacre/cpp)
 - [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/Alphabet_war.cpp)
 
 ----
