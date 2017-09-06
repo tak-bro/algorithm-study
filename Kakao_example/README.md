@@ -11,3 +11,10 @@
 | JavaScript | Node.js 8.2.1  |                                                           |
 | Ruby       | Ruby 2.3.1p112 |                                                           |
 | Swift      | Swift 3.1.1    |                                                           |
+
+- Install clang++ to Ubuntu 14.04
+```
+$ sudo apt-get update
+$ sudo apt-get install clang-3.8
+$ sudo ln -s /usr/bin/clang++-3.8 /usr/bin/clang++
+```

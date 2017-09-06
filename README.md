@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [Alphabet war](#alphabet-war)
 - [The takeWhile Function](#the-takewhile-function)
 - [Mr. Safety's treasures](#mr-safetys-treasures)
 - [A disguised sequence (I)](#a-disguised-sequence-i)
@@ -20,6 +21,11 @@
 - [Averages of numbers](#averages-of-numbers)
 
 ----
+####[Alpabet war](https://www.codewars.com/kata/alphabet-war-airstrike-letters-massacre/cpp)
+- [My Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/Alphabet_war.cpp)
+
+----
+
 #### The takeWhile Function
 - The first is the sequence of values, and the second is the predicate function. The function does not change the value of the original sequence.
 ```
