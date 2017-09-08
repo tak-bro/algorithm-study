@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [Vowel Shifting](#vowel-shifting)
 - [Srot the inner ctonnet in dsnnieedcg oredr](#srot-the-inner-ctonnet-in-dsnnieedcg-oredr)
 - [Alphabet war](#alphabet-war)
 - [The takeWhile Function](#the-takewhile-function)
@@ -22,6 +23,12 @@
 - [Averages of numbers](#averages-of-numbers)
 
 ----
+
+#### [Vowel Shifting](https://www.codewars.com/kata/vowel-shifting/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SrotTheInnerCtonnet.cpp)
+
+----
+
 #### [Srot the inner ctonnet in dsnnieedcg oredr](https://www.codewars.com/kata/srot-the-inner-ctonnet-in-dsnnieedcg-oredr/cpp)
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SrotTheInnerCtonnet.cpp)
 
