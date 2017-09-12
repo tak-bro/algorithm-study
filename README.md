@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [Decimal to Factorial and Back](#decimal-to-factorial-and-back)
 - [Vowel Shifting](#vowel-shifting)
 - [Srot the inner ctonnet in dsnnieedcg oredr](#srot-the-inner-ctonnet-in-dsnnieedcg-oredr)
 - [Alphabet war](#alphabet-war)
@@ -21,6 +22,12 @@
 - [Parts of a list](#parts-of-a-list)
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
+
+----
+
+#### [Decimal to Factorial and Back](https://www.codewars.com/kata/54e320dcebe1e583250008fd/train/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/DecimalToFactorial.cpp)
+  - It's not my solution
 
 ----
 
