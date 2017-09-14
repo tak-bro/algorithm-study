@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents 
+- [Fun with trees: max sum](#fun-with-trees)
 - [Decimal to Factorial and Back](#decimal-to-factorial-and-back)
 - [Vowel Shifting](#vowel-shifting)
 - [Srot the inner ctonnet in dsnnieedcg oredr](#srot-the-inner-ctonnet-in-dsnnieedcg-oredr)
@@ -22,6 +23,12 @@
 - [Parts of a list](#parts-of-a-list)
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
+
+----
+
+#### [Fun with trees: max sum](https://www.codewars.com/kata/fun-with-trees-max-sum/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/FunWithTrees.cpp)
+  - It's not my solution
 
 ----
 
