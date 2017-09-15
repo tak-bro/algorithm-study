@@ -1,8 +1,8 @@
 # CodeWars
 
 ### Table of Contents 
-- [GA-DE-RY-PO-LU-KI cypher vol2](#ga-de-ry-po-lu-ki-cyper-vol2)
-- [Fun with trees: max sum](#fun-with-trees)
+- [GA-DE-RY-PO-LU-KI cypher vol2](#ga-de-ry-po-lu-ki-cypher-vol2)
+- [Fun with trees: max sum](#fun-with-trees-max-sum)
 - [Decimal to Factorial and Back](#decimal-to-factorial-and-back)
 - [Vowel Shifting](#vowel-shifting)
 - [Srot the inner ctonnet in dsnnieedcg oredr](#srot-the-inner-ctonnet-in-dsnnieedcg-oredr)
@@ -29,8 +29,6 @@
 
 #### [GA-DE-RY-PO-LU-KI cypher vol2](https://www.codewars.com/kata/ga-de-ry-po-lu-ki-cypher-vol-2/cpp)
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/GA-DE-RY-PO-LU-KI.cpp)
-
-----
 
 ----
 
