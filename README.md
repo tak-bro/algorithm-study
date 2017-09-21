@@ -1,6 +1,7 @@
 # CodeWars
 
-### Table of Contents 
+### Table of Contents for Codewars
+- [Multiple of 11](#multiple-of-11)
 - [GA-DE-RY-PO-LU-KI cypher vol2](#ga-de-ry-po-lu-ki-cypher-vol2)
 - [Fun with trees: max sum](#fun-with-trees-max-sum)
 - [Decimal to Factorial and Back](#decimal-to-factorial-and-back)
@@ -24,6 +25,11 @@
 - [Parts of a list](#parts-of-a-list)
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
+- 
+----
+
+#### [Multiple of 11](https://www.codewars.com/kata/multiple-of-11/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/MultipleOf11.cpp)
 
 ----
 
