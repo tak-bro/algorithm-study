@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Prize Draw](#prize-draw)
 - [Multiple of 11](#multiple-of-11)
 - [GA-DE-RY-PO-LU-KI cypher vol2](#ga-de-ry-po-lu-ki-cypher-vol2)
 - [Fun with trees: max sum](#fun-with-trees-max-sum)
@@ -25,7 +26,13 @@
 - [Parts of a list](#parts-of-a-list)
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
-- 
+ 
+
+----
+
+#### [Prize Draw](https://www.codewars.com/kata/price-draw/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/PrizeDraw.cpp)
+
 ----
 
 #### [Multiple of 11](https://www.codewars.com/kata/multiple-of-11/cpp)
