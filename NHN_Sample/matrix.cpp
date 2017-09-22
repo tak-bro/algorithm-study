@@ -5,15 +5,6 @@
 
 using namespace std;
 
-// string to int
-int stoi(string n) {
-    istringstream buffer(n);
-    int result;
-    buffer >> result;
-    return result;
-}
-
-
 vector<int> getInput(int sizeLimit) 
 {
     vector<int> tokenVector;
@@ -36,16 +27,18 @@ vector<int> getInput(int sizeLimit)
 
 
 int main() {
-	int n, tmp = 0;
-	cin>> n;
+	int n = 0;
+	string line;
 	
-	vector<vector<int> > input(n, vector<int>(n, 0));
-	vector<int> tmpVector = getInput(n);
+	cin >> n;
+  	getline(cin, line);
 	
+	vector< vector<int> > input(n, vector<int>(n, 0));
+	
+	// get input NxN matrix
 	for (int i = 0; i < n; i++) {
 	    input[i] = getInput(n);
 	}
-	
 	
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
@@ -58,5 +51,5 @@ int main() {
 		cout << endl;
 	}
 
-    return 0;
+    	return 0;
 }
