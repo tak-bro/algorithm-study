@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Brick pyramid](#brick-pyramid)
 - [Prize Draw](#prize-draw)
 - [Multiple of 11](#multiple-of-11)
 - [GA-DE-RY-PO-LU-KI cypher vol2](#ga-de-ry-po-lu-ki-cypher-vol2)
@@ -27,6 +28,10 @@
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
  
+----
+
+#### [Brick pyramid](https://www.codewars.com/kata/brick-pyramid/train/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/BrickPyramid.cpp)
 
 ----
 
@@ -58,7 +63,7 @@
 ----
 
 #### [Vowel Shifting](https://www.codewars.com/kata/vowel-shifting/cpp)
-- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SrotTheInnerCtonnet.cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/VowelShifting.cpp)
 
 ----
 
