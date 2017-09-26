@@ -1,6 +1,7 @@
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Basics 07: Calculate Sin(x) - too easy?](#calculate-sin)
 - [Brick pyramid](#brick-pyramid)
 - [Prize Draw](#prize-draw)
 - [Multiple of 11](#multiple-of-11)
@@ -28,6 +29,9 @@
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
  
+----
+#### [Calculate Sin](https://www.codewars.com/kata/basics-07-calculate-sin-x-too-easy/train/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CalculateSin(x).cpp)
 ----
 
 #### [Brick pyramid](https://www.codewars.com/kata/brick-pyramid/train/cpp)
