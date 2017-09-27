@@ -30,6 +30,7 @@
 - [Averages of numbers](#averages-of-numbers)
  
 ----
+
 #### [Calculate Sin](https://www.codewars.com/kata/basics-07-calculate-sin-x-too-easy/train/cpp)
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CalculateSin(x).cpp)
 ----
