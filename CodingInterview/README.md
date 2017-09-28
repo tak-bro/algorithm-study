@@ -81,7 +81,29 @@ void rotate(int n, vector<vector<int>> &matrix) {
 
 - Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
 ```c
-
+void setZeros(int n, int m, vector<vector<int>> &matrix) {
+    vector<int> row(n, 0);
+    vector<int> column(m, 0);
+    
+    // store the index
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (matrix[i][j] == 0) {
+                row[i] = 1;
+                column[j] = 1;
+            }
+        }
+    }
+    
+    // set matrix[i][j] to zero
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (row[i] == 1 || column[j] == 1) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
+}
 ```
 
 

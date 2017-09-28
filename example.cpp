@@ -78,6 +78,20 @@ vector<string> string2vector(string s, string token){
     return v;
 }
 
+vector<string> split(string& stringToSplit, string& delimiter)
+{
+    vector<string> result;
+    size_t pos = 0, lastPos = 0;
+    while ((pos = stringToSplit.find_first_of(delimiter, lastPos)) != string::npos)
+    {
+        result.push_back(stringToSplit.substr(lastPos, pos-lastPos+1));
+        lastPos = pos+1;
+    }
+    result.push_back(stringToSplit.substr(lastPos));
+    
+    return result;
+}
+
 // return max
 int max(int a, int b)
 {
@@ -88,11 +102,4 @@ int max(int a, int b)
 int min(int a, int b)
 {
     return a > b ? b : a;
-}
-
-
-int main() {
-    cout << 2e9 << endl;
-      
-     return 0;
 }
