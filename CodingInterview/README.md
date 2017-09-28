@@ -42,6 +42,19 @@ void reverse(char *str) {
 }
 ```
 
+- Write a method to decide if two strings are anagrams or not.
+```c
+bool isAnagram(string a, string b) {
+    if (a.length() != b.length()) return false;
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+    return (a == b);
+}
+```
+
+- Write a method to replace all spaces in a string with ‘%20’.
+```
+```
 --------
 
 

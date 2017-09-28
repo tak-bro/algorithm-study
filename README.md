@@ -1,3 +1,27 @@
+#### Unit test
+- Install gtest library
+```
+$ sudo apt-get install libgtest-dev
+```
+
+- Compile gtest
+```
+$ sudo apt-get install cmake
+$ cd /usr/src/gtest/
+$ sudo cmake CMakeLists.txt
+$ sudo make
+$ sudo cp *.a /usr/lib
+```
+
+- Build test file
+```
+$ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
+```
+
+> Note: on cloud9 ide, I created new Runner "C++(simple)2" for auto compile"
+
+---------------------
+
 # CodeWars
 
 ### Table of Contents for Codewars
