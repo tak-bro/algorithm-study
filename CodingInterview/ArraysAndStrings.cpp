@@ -66,26 +66,50 @@ bool isAnagram2(string a, string b) {
     return true;
 }
 
-string replaceFun(string str) {
-    int len = str.length();
-    int spaceCnt = 0;
-    int newLength = 0;
-    
-    for (int i = 0; i < len; i++) {
-        if (str[i] == ' ') spaceCnt++;
-    }
-    newLength = len + spaceCnt*2;
-    
-    for (int i = len; i > 0; i--) {
-        if (str[i] == ' ') {
-            str[newLength-1] = '0';
-            str[newLength-2] = '2';
-            str[newLength-3] = '%';
-            newLength = newLength - 3;
-        } else {
-            str[newLength-1] = str[i];
-            newLength = newLength - 1;
+void rotate(int n, vector<vector<int>> &matrix) {
+    for (int layer = 0; layer < n/2; ++layer) {
+        int first = layer;
+        int last = n-1-layer;
+        
+        for (int i = first; i < last; ++i) {
+            int offset = i - first;
+            int top = matrix[first][i]; // save top
+            
+            // left -> top
+            matrix[first][i] = matrix[last-offset][first];
+            
+            // bottom -> left
+            matrix[last-offset][first] = matrix[last][last-offset];
+            
+            // right -> bottom
+            matrix[last][last-offset] = matrix[i][last];
+            
+            // top -> right
+            matrix[i][last] = top; // right
         }
     }
-    return str;
+}
+
+void setZeros(int n, int m, vector<vector<int>> &matrix) {
+    vector<int> row(n, 0);
+    vector<int> column(m, 0);
+    
+    // store the index
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (matrix[i][j] == 0) {
+                row[i] = 1;
+                column[j] = 1;
+            }
+        }
+    }
+    
+    // set matrix[i][j] to zero
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (row[i] == 1 || column[j] == 1) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
 }
