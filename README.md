@@ -25,6 +25,7 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Sorted Array](#sorted-array)
 - [Basics 07: Calculate Sin(x) - too easy?](#calculate-sin)
 - [Brick pyramid](#brick-pyramid)
 - [Prize Draw](#prize-draw)
@@ -53,6 +54,10 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
  
+----
+
+#### [Sorted Array](https://www.codewars.com/kata/sorted-arrays/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SortedArray.cpp)
 ----
 
 #### [Calculate Sin](https://www.codewars.com/kata/basics-07-calculate-sin-x-too-easy/train/cpp)
