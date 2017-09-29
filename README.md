@@ -1,4 +1,20 @@
-#### Unit test
+### Unit test
+##### Catch
+- Download catch.hpp file on github
+```
+$ wget https://raw.githubusercontent.com/philsquared/Catch/master/single_include/catch.hpp
+```
+- Include hpp file to unit test file. *That's it*
+```c
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
+```
+> It is much easier than gtest
+
+----------
+
+##### gtest
+
 - Install gtest library
 ```
 $ sudo apt-get install libgtest-dev
