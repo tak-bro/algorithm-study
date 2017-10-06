@@ -210,3 +210,129 @@ bool searchMangoSeller(string name) {
 TEST_CASE( "Graph", "[searchMangoSeller]" ) {
     REQUIRE (searchMangoSeller("you") == true);
 }
+
+
+//////////////////
+// get graph
+std::map< std::string, std::vector<std::string> > getMyGraph() {
+    std::map<std::string, std::vector<std::string>> myGraph;
+    myGraph["CAB"] = { "CAR", "CAT" };
+    myGraph["CAR"] = { "CAT", "BAR" };
+    myGraph["BAR"] = { "BAT" };
+    myGraph["CAT"] = { "MAT", "BAT" };
+    myGraph["MAT"] = { "BAT" };
+    
+    return myGraph;
+}
+
+// check whether current edge is destination or not
+bool isDestination(std::string curVertex) {
+    if (curVertex == "BAT") {
+        return true;
+    }
+    return false;
+}
+
+bool isChecked(vector<string> &list, string curVertex) {
+    for (vector<string>::iterator iter = list.begin(); iter != list.end(); ++iter) {
+        if (curVertex == *iter) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void pushQueue(std::queue<std::string> &myQueue, std::vector<std::string> curVertex) {
+    cout << "Push Queue: "; 
+    for (int i = 0; i < curVertex.size(); i++) {
+        cout << curVertex[i] << ' ';
+        myQueue.push(curVertex[i]);
+    }   
+    cout << '\n';
+}
+
+bool searchShortestPath() {
+    std::map<std::string, std::vector<std::string>> myGraph = getMyGraph();
+    std::queue<std::string> myQueue;
+    std::vector<std::string> checked;
+    
+    pushQueue(myQueue, myGraph["CAB"]);
+    checked.push_back("CAB");
+    // 현재 queue 에는 "CAT", "CAR" 이 들어있다. 
+    while (myQueue.size() > 0) {
+        std::string curVertex = myQueue.front(); myQueue.pop();
+        cout << "current Vertex: " << curVertex << '\n';
+        
+        if (!isChecked(checked, curVertex)) {
+            if (isDestination(curVertex)) {
+                cout << "Destination: " << curVertex << '\n';
+                return true;
+            } else {
+                pushQueue(myQueue, myGraph[curVertex]);
+                checked.push_back(curVertex);
+            }   
+        }
+    }
+    return false;
+}
+
+TEST_CASE( "BFS", "[searchShortestPath]" ) {
+    cout << endl;
+    REQUIRE (searchShortestPath() == true);
+}
+
+///////// Dynamic Programming
+// Knapsack problem
+
+#define GUITAR 0    // GUITAR   weight: 1,  $: 1500
+#define STEREO 1    // STEREO   weight: 4,  $: 3000
+#define NOTEBOOK 2  // NOTEBOOK weight: 3,  $: 2000
+
+int max(int a, int b) {
+    if (a > b) return a;
+    else return b;
+}
+
+int knapsackProblem() {
+    
+    // create GRID for Dynamic Programming
+    //      1      2      3      4
+    //    --------------------------
+    // G | 1500   1500   1500   1500
+    // S | 1500   1500   1500   3000
+    // N | 1500   1500   2000   3500
+    //
+    // 4g의 백팩에서 3g의 노트북을 넣을때, 1g만큼 남는데, 이미 1g의 최대값을 그 전에 구했다.
+    //
+    // cell[i][j]의 최대값: 1. 지금까지 구한 cell[i-1][j]의 값 중에서 가장 최대값
+    //                      2. 현재 물건의 가치 + 남은 공간의 가치(cell[i-1][j-물건의 무게]
+    
+    std::vector<std::vector<int>> grid(100, std::vector<int>(100, 0));
+    std::vector<int> weight = { 0, 1, 4, 3 };
+    std::vector<int> price = { 0, 1500, 3000, 2000 };
+    
+    for (int i = 1; i <= 3; i++) {
+       for (int w = 1; w <= 4; w++) {
+           if (w < weight[i]) {
+               grid[i][w] = grid[i-1][w];
+           } else {
+               grid[i][w] = max(grid[i-1][w], price[i] + grid[i-1][w-weight[i]]);
+           }
+       }
+    }
+    
+    // print
+    for (int i = 1; i < 4; i++) {
+        for (int j = 1 ; j < 5; j++) {
+            cout << grid[i][j] << ' ';
+        }
+        cout << '\n';
+    }
+    
+    return grid[3][4];
+}
+
+TEST_CASE( "knapsackProblem", "[knapsackProblem]" ) {
+    cout << endl;
+    REQUIRE (knapsackProblem() == 3500);
+}

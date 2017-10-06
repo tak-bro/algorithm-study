@@ -1,11 +1,45 @@
-# Cracking the Coding Interview, 4th Edition
+# Book
 
 ## Table of Contents
+- [Grokking Algorithms](#grokking-algorithms)
+- [Cracking the Coding Interview, 4th Edition](#cracking-the-coding-interview)
+
+-------
+
+### Grokking Algorithms
+
+##### Breadth-first search
+- Graph
+    - 연결의 집합을 모형화한 것
+    - **정점(node)**와 **간선(edge)**로 이루어져 있다.
+    > 정점은 여러 개의 다른 정점과 이어질 수 있는데, 이런 이어진 정점을 neighbor라고 한다.
+- Queue
+    - 삽입(enqueue), 제거(dequeue)
+    - FIFO(First In First Out)
+    - C++ stl
+    
+    ```c
+    // Preprocessor
+    #include <queue>
+    // Declaration
+    std::queue<T> myQueue;
+    // Insert data
+    myQueue.push(data);
+    T fisrtVal = myQueue.front(); // Get first data of queue
+    T lastVal = myQueue.back(); // Access last element 
+    // Drop data
+    myQueue.pop();
+    // etc
+    myQueue.size(); // get size of queue
+    myQueue.empty(); // check whether queue is empty or not
+    ```
+
+-------
+
+#### Cracking the Coding Interview
 - [Chapter1. Arrays and Strings](#arrays-and-strings)
 
---------
-
-#### Arrays and Strings
+##### Arrays and Strings
 
 - Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
 ```c
