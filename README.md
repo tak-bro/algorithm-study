@@ -41,6 +41,7 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Find the missing term in an Arithmetic Progression](#find-the-missing-term-in-an-arithmetic-progression)
 - [Sorted Array](#sorted-array)
 - [Basics 07: Calculate Sin(x) - too easy?](#calculate-sin)
 - [Brick pyramid](#brick-pyramid)
@@ -71,6 +72,11 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 - [Averages of numbers](#averages-of-numbers)
  
 ----
+
+#### [Find the missing term in an Arithmetic Progression](https://www.codewars.com/kata/find-the-missing-term-in-an-arithmetic-progression/train/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/ArithmeticProgression.cpp)
+----
+
 
 #### [Sorted Array](https://www.codewars.com/kata/sorted-arrays/cpp)
 - [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/SortedArray.cpp)

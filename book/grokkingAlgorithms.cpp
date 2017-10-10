@@ -276,17 +276,12 @@ bool searchShortestPath() {
     return false;
 }
 
-TEST_CASE( "BFS", "[searchShortestPath]" ) {
-    cout << endl;
-    REQUIRE (searchShortestPath() == true);
-}
-
 ///////// Dynamic Programming
 // Knapsack problem
 
-#define GUITAR 0    // GUITAR   weight: 1,  $: 1500
-#define STEREO 1    // STEREO   weight: 4,  $: 3000
-#define NOTEBOOK 2  // NOTEBOOK weight: 3,  $: 2000
+#define GUITAR 1    // GUITAR   weight: 1,  $: 1500
+#define STEREO 2    // STEREO   weight: 4,  $: 3000
+#define NOTEBOOK 3  // NOTEBOOK weight: 3,  $: 2000
 
 int max(int a, int b) {
     if (a > b) return a;
@@ -311,7 +306,7 @@ int knapsackProblem() {
     std::vector<int> weight = { 0, 1, 4, 3 };
     std::vector<int> price = { 0, 1500, 3000, 2000 };
     
-    for (int i = 1; i <= 3; i++) {
+    for (int i = GUITAR; i <= NOTEBOOK; i++) {
        for (int w = 1; w <= 4; w++) {
            if (w < weight[i]) {
                grid[i][w] = grid[i-1][w];
@@ -335,4 +330,70 @@ int knapsackProblem() {
 TEST_CASE( "knapsackProblem", "[knapsackProblem]" ) {
     cout << endl;
     REQUIRE (knapsackProblem() == 3500);
+}
+
+void longestCommonSubsequence() {
+    std::string a = " FISH";
+    std::string b = " FORT";
+    std::string input = " FOSH";
+    std::vector<std::vector<int>> grid(10, std::vector<int>(10, 0));
+    
+    cout << a.size() << endl;
+    
+    for (int i = 1; i < a.size(); i++) {
+        for (int j = 1; j < input.size(); j++) {
+            cout << "a[i]" << a[i] << ", input[j]" << input[j] << endl;
+            if (a[i] == input[j]) {
+                grid[i][j] = grid[i-1][j-1] + 1;
+            }
+            else {
+                grid[i][j] = max(grid[i-1][j], grid[i][j-1]);
+            }
+        }
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            cout << grid[i][j] << ' ';
+        }
+        cout << endl;
+    }
+}
+
+#define WATER 1
+// ....
+#define CAMERA 5
+
+void knapsackProblem2() {
+    std::vector<int> weight = { 0, 3, 1, 2, 2, 1 };
+    std::vector<int> price = { 0, 10, 3, 9, 5, 6 };
+    std::vector<std::vector<int>> grid(10, std::vector<int>(10, 0));
+    
+    int LIMIT = 6;
+    
+    for (int i = WATER; i <= CAMERA; i++) {
+        for (int w = 1; w <= LIMIT; w++) {
+            if (w < weight[i]) {
+                grid[i][w] = grid[i-1][w];
+            } else {
+                grid[i][w] = max(grid[i-1][w], price[w] + grid[i-1][w-weight[i]]);
+            }
+        }
+    }
+    
+    for (int i = WATER; i <= CAMERA; i++) {
+        for (int w = 1; w <= LIMIT; w++) {
+            cout << grid[i][w] << ' ';
+        }
+        cout << endl;
+    }
+    cout << grid[CAMERA][LIMIT] << endl;
+    
+}
+
+TEST_CASE( "longestCommonSubsequence", "[longestCommonSubsequence]" ) {
+    cout << endl;
+    longestCommonSubsequence();
+    cout << endl;
+    knapsackProblem2();
 }
