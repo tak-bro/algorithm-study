@@ -1,19 +1,19 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include<vector>
 #include"../catch.hpp"
+#include <vector>
 
-std::vector<long long> tmp(80, 0);
+std::vector<long long> fibonacci(80, 0);
 
-class Fibonacci{
+class Solution {
 public:
     long long solution(int N) {
-        if (N < 2) 
+         if (N < 2) 
             return N;
 
-        if (tmp[N] != 0) 
-            return tmp[N];
+        if (fibonacci[N] != 0) 
+            return fibonacci[N];
         
-        return tmp[N] = solution(N-1) + solution(N-2);
+        return fibonacci[N] = solution(N-1) + solution(N-2);
     }
 };
 

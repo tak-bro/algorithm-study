@@ -78,6 +78,8 @@ vector<string> string2vector(string s, string token){
     return v;
 }
 
+// vector<string> vecSplit = split("ab cd ef", " ")
+// vecSplit = { "ab", "cd", "ef" }
 vector<string> split(string& stringToSplit, string& delimiter)
 {
     vector<string> result;
