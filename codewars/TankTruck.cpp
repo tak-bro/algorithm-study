@@ -22,9 +22,8 @@ public:
 
 
 TEST_CASE( "Tank vol calculated", "[tankvol]" ) {
-    VolTank object = VolTank();
-    REQUIRE( object.tankVol(5, 7, 3848) == 2940 );
-    REQUIRE( object.tankVol(2, 7, 3848) == 907 );
-    REQUIRE( object.tankVol(2, 8, 5026) == 982 );
-    REQUIRE( object.tankVol(4, 9, 6361) == 2731 );
+    REQUIRE( VolTank::tankVol(5, 7, 3848) == 2940 );
+    REQUIRE( VolTank::tankVol(2, 7, 3848) == 907 );
+    REQUIRE( VolTank::tankVol(2, 8, 5026) == 982 );
+    REQUIRE( VolTank::tankVol(4, 9, 6361) == 2731 );
 }
