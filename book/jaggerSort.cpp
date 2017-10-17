@@ -6,11 +6,6 @@
 
 using namespace std;
 
-/*
- * Description :
- * Time complexity :
- * Space complexity :
- */
 int calc(vector<int> &list) {
     int size = list.size();
     if (size== 1)   return 1;
