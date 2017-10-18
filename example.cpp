@@ -62,22 +62,6 @@ string vector2string(const std::vector<std::string>& elements, const char* const
     }
 }
 
-// string to vector<string>
-vector<string> string2vector(string s, string token){
-    std::vector<std::string> v;
-
-    size_t posLast = 0, pos = 0;
-    while((pos = s.find(token, pos)) != std::string::npos) {
-        if(s[pos] != s[posLast])
-            v.push_back(s.substr(posLast, pos - posLast));
-        posLast = ++pos;
-    }
-    if(s[posLast] != 0)  // If there is no terminating token found
-        v.push_back(s.substr(posLast));
-
-    return v;
-}
-
 // vector<string> vecSplit = split("ab cd ef", " ")
 // vecSplit = { "ab", "cd", "ef" }
 vector<string> split(string& stringToSplit, string& delimiter)
