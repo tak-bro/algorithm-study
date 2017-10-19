@@ -41,6 +41,7 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 # CodeWars
 
 ### Table of Contents for Codewars
+- [Collaboration Station](#collaboration-station)
 - [Tank Truck](#tank-truck)
 - [Find the missing term in an Arithmetic Progression](#find-the-missing-term-in-an-arithmetic-progression)
 - [Sorted Array](#sorted-array)
@@ -72,6 +73,10 @@ $ g++ -std=c++11 test.cpp -o test.o -lgtest -lpthread
 - [Couting Duplicates](#couting-duplicates)
 - [Averages of numbers](#averages-of-numbers)
  
+----
+
+#### [Collaboration Station](https://www.codewars.com/kata/collaboration-station/cpp)
+- [Solution](https://github.com/njir/Algorithm-study/tree/master/codewars/CollaborationStation.cpp)
 ----
 
 #### [Tank Truck](https://www.codewars.com/kata/tank-truck/train/cpp)
