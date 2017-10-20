@@ -33,17 +33,13 @@ import java.util.*;
 
 class CodilityTest {
      public static int solution(int[] A) {
-        // write your code in Java SE 8
-        
         // Sort array
         Arrays.sort(A);
-        
         // Delete negative integers
         int[] positives = Arrays.stream(A).filter(x -> (x > 0)).toArray();
         if (positives.length == 0) {
             return 1;
         }
-        
         // Delete duplicate elements
         int b=0;
         positives[b] = positives[0];
@@ -53,7 +49,7 @@ class CodilityTest {
                 positives[b] = positives[i];
             }
         }
-         
+        // Check all integers
         boolean allChecked = true;
         for (int i = 0; i < positives.length; i++) {
             if ((i+1) != positives[i]) {
@@ -61,7 +57,7 @@ class CodilityTest {
                 return i+1;
             }
         }
-        
+        // if no return
         if (allChecked) {
             return positives.length+1;
         }
