@@ -36,9 +36,36 @@ void perm(vector<int> &arr, int depth, int n, int k)
     }
 }
 
+#define N 4
+#define R 3
+
+int selected[R];
+int flag[N+1];
+
+void full(int depth)
+{
+  int i;
+  if( R==depth){
+    // 모두 선택 되었음 출력하기
+    for(i=0;i<R;i++){
+      printf("%d ",selected[i]);
+    }
+    printf("\n");
+    return;
+  }
+  for(i=1;i<=N;i++){
+    if(flag[i]==1)continue;
+    flag[i]=1;
+    selected[depth]=i;
+    full(depth+1);
+    flag[i]=0;
+  }
+}
+
 int main() {
     vector<int> arr = { 1, 2, 3, 4 };
-    perm(arr, 0, 4, 4);
+   // perm(arr, 0, 4, 2);
     
+    full(0);
     return 0;
 }

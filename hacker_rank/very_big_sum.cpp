@@ -2,7 +2,7 @@
 
 using namespace std;
 
-long aVeryBigSum(int n, vector <long> ar) {
+long long aVeryBigSum(int n, vector <long> ar) {
     // Complete this function
     long long lSum=0;
     for (vector<long>::iterator iter = ar.begin(); iter != ar.end(); ++iter) {
