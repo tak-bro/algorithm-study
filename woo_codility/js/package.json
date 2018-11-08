@@ -1,0 +1,14 @@
+{
+  "name": "solution-codility",
+  "version": "1.0.0",
+  "description": "A simple calculator application built with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.1.0"
+  }
+}
