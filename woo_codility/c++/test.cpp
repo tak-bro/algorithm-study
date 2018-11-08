@@ -115,5 +115,5 @@ int solution(int n)
 
 TEST_CASE( "codility test1", "[solution]" ) {
     REQUIRE( solution(10) == 10 );
-    REQUIRE( solution(10) == 10 );
+    REQUIRE( solution(10) == 1 );
 }
