@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include"../catch.hpp"
+#include "catch.hpp"
 
 #include <iostream>
 #include <string>
@@ -110,10 +110,31 @@ int min(int a, int b)
 
 int solution(int n)
 {
+    // write your code in C++14 (g++ 6.2.0)
     return n;
 }
 
-TEST_CASE( "codility test1", "[solution]" ) {
+bool palindrome(string input)
+{
+    const int length = input.length();
+
+    for (int i = 0; i < length / 2; i++) {
+        if (input[i] != input[length-1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+TEST_CASE( "palindrome test", "[palindrome]" ) {
+    REQUIRE( palindrome("abba") == true );
+    REQUIRE( palindrome("abcba") == true );
+    REQUIRE( palindrome("abdba") == true );
+    REQUIRE( palindrome("abbsba") == false );
+    REQUIRE( palindrome("abasdasd") == false );
+}
+
+TEST_CASE( "codility test", "[solution]" ) {
     REQUIRE( solution(10) == 10 );
-    REQUIRE( solution(10) == 1 );
 }

@@ -1,0 +1,110 @@
+<html>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<table>
+    <tbody>
+        <tr>
+            <td style="color: #ff00ff; background-color:#FFFFFF">Q</TD>
+            <td style="background-color: #442244; color: #442244">Y</td>
+            <td style="color: #FFFF00; background-color:#442244">A</td>
+        </tr>
+        <tr>
+            <td style="color: #FFEEFE; background-color:#990000">Q</td>
+            <td style="color: #FFFF00; background-color:#FF0">M</td>
+            <td style="color: #000000; background-color:#FF7777">O</td>
+        </tr>
+        <tr>
+            <td style="color: #FFEEFE; background-color:#990000">Q</td>
+            <td style="color: #FFFF00; background-color:#FF0">M</td>
+            <td style="color: #000000; background-color:#FF7777">O</td>
+        </tr>
+        <tr>
+            <td style="color: #990000; background-color:#990000">Q</td>
+            <td style="color: #FFF200; background-color:#FF0">M</td>
+            <td style="color: #002300; background-color:#FF7777">O</td>
+        </tr>
+    </tbody>
+</table>
+
+<section>
+    <div style="width:1000px; height: 1000px">
+        asdasdasdasasdsadsa
+    </div>
+</section>
+</html>
+
+<script>
+ function solution() {
+    let result = '';
+    $('tbody td').each(function () {
+        const bgColor = $(this).css("backgroundColor");
+        const color = $(this).css("color");
+        
+        if (bgColor !== color) {
+            result += $(this).text();
+        }
+    });
+    return result;
+}
+
+ function solution2() {
+    let result = '';
+    $('tbody td').each((i, element) => {
+         const bgColor = $(element).css("backgroundColor");
+         const color = $(element).css("color");
+
+         if (bgColor !== color) {
+             result += $(element).text();
+         }
+     });
+    return result;
+}
+
+// function setRandomBg(){
+//   var random= Math.floor(Math.random() * 3) + 0;
+//   var bigSize = ['url("./img/backimg01.jpg")',
+//                  'url("./img/backimg02.jpg")',
+//                  'url("./img/backimg03.jpg")'];
+
+//   $('section div').css('background-image', 'url(' + bigSize[random] + ')');
+// }
+
+// (function() {
+//     var interval = 3000;
+//     var imgArray = ['1.png', '2.png', '3.png'];
+
+//     for (let i = 0; i < imgArray.length; i++) {
+//         setTimeout(() => {
+//             setRandomBg();
+//         }, i * interval);
+//     }
+// })();
+
+function randombg(){
+  var random= Math.floor(Math.random() * 3) + 0;
+  var bigSize = ['url("1.png")',
+                 'url("2.png")',
+                 'url("3.png")'];
+  $('section div').css('background-image', bigSize[random]);
+}
+
+var interval = 1000;
+
+for(let i=0 ; i <= 100000; i ++) {
+    setTimeout(() => {
+        randombg();
+        }, i * interval);
+}
+
+// while(1) {
+//     var interval = 3000;
+//     setTimeout(() => {
+//         interval += 3000;
+//         randombg();
+//     }, interval); 
+// }
+
+console.log(solution());
+console.log('\n')
+console.log(solution2());
+</script>

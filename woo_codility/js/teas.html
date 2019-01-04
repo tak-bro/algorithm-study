@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>금융기관 자체감정 지원시스템 TestVersion</title>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="./js/global.js"></script>
+</head>
+<script language="JavaScript">
+   $(document).ready(function(){
+
+      $(window).on('wheel', function(e) {
+         var delta = e.originalEvent.deltaY;
+
+         if (delta > 0){
+            $("footer").slideDown(500);
+         }else{
+            $("footer").slideUp(500);
+         }
+         return false; // this line is only added so the whole page won't scroll in the demo
+      });
+
+   });
+
+
+</script>
+<style>
+   @import url(//fonts.googleapis.com/earlyaccess/hanna.css); 
+   * { margin:0; padding:0; font-size:13px; font-family: 'Hanna'; }
+   body { width:100%; height:100%; }
+   header, section, footer { display:block; }
+   header {
+      z-index:10;
+      position:fixed;
+      width:100%;
+      height:120px;
+      background:rgba(0,0,0,.5);
+      top:0;
+   }
+   section {
+      width:100%;
+      height:100%:
+   }
+   section > div {
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+   }
+   section > div > form  {
+      position:fixed;
+      min-width:100%;
+      margin-left:27%;
+      margin-top:20%;
+   }
+   section > div > form > #search {
+      color:gray;
+      float:left;
+      width:40%;
+      padding:20px;
+      font-size:2.5em;
+      border:3px #1a69b2 solid;
+      box-shadow:2px 2px 2px rgba(0,0,0,.3);
+   }
+   #smb {
+      float:left;
+      width:79px;
+      height:79px;
+      background:#1a69b2 url("./img/search_button.png") no-repeat;
+      background-position: center; 
+      border:0;
+      cursor:pointer;
+   }
+   footer {
+      z-index:10;
+      display:none;
+      text-align:center;
+      width:100%;
+      padding:35px 0px;
+      font-size:1.1em;
+      background:#efefef;
+      position:fixed;
+      bottom:0;
+   }
+
+      
+      
+      #header .inner {
+         margin: 0 auto;
+         position: relative;
+      }
+
+      #header .logo {
+         color: #fff;
+         margin-left:15%;
+         margin-top:2%;
+         font-size: 1.5em;
+         
+      }
+      #header a {
+         display: inline-block;
+         color: #fff;
+         text-decoration: none;
+         font-size: 1em;
+      }
+   #nav {
+      text-align: left;
+      margin-left: 45%;
+   }
+
+
+</style>
+
+<body>
+
+<!-- ----- Header ----- -->
+   <header id="header">
+      <div class="inner">
+         <a href="index.php" class="logo">스피드옥션 금융기관 자체감정 지원서비스</a>
+         <a id="nav">
+               <a href="index.php">Main</a>
+               <a href="login.php">Login</a>
+               <a href="error.php">문의사항</a>
+         </a>
+      </div>
+   </header>
+
+<!-- ----- 검색창 ----- -->
+   <section>
+      <div>
+         <form action="./service/">
+            <input type="text" id="search"  value="예시) 서울시 금천구 가산동 60-15"><input type="submit" id="smb" value="">
+         </form>
+      </div>
+   </section>
+
+
+<!-- ----- Footer ----- -->
+   <footer>
+      스피드옥션<br>
+      개인정보보호책임자<br>
+      대표이사<br>
+      고객센터<br>
+   </footer>
+</body>
+</html>

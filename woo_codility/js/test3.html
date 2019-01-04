@@ -1,0 +1,88 @@
+<html>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+<ul>
+    <li>Item:
+        <ol>
+            <li>Point:
+                <div>
+                    <ul>
+                        <li>elem1</li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </li>
+    <li>elem2</li>
+</ul>
+<ul>
+    <li>simple list1</li>
+</ul>
+<ul>
+</ul>
+
+</html>
+
+<script>
+
+    function solution() {
+        var maxDepth = 0,
+            d,
+            parents,
+            myselector = 'ul, ol';
+
+        $(myselector).each(function (i) {
+            parents = $(this).parents(myselector);
+            d = parents ? parents.length + 1 : 1;
+            maxDepth = d > maxDepth ? d : maxDepth;
+            console.log(d, maxDepth);
+        });
+        return maxDepth;
+    }
+
+    function solution2() {
+        let depth = 0;
+        let result = 0;
+        let parents = null;
+
+        $('ul, ol').each(function() {
+            parents = $(this).parents('ul, ol');
+            depth = parents ? parents.length + 1 : 1;
+            result = Math.max(depth, result); 
+        });
+
+        return result;
+    }
+
+    function solution2() {
+        let depth = 0;
+        let result = 0;
+        let parents = null;
+
+        $('ul, ol').each(function() {
+            parents = $(this).parents('ul, ol');
+            depth = parents ? parents.length + 1 : 1;
+            result = Math.max(depth, result); 
+        });
+
+        return result;
+    }
+
+     function solution3() {
+        let depth = 0;
+        let result = 0;
+        let parents = null;
+
+        $('ul, ol').each((index, element) => {
+            parents = $(element).parents('ul, ol');
+            depth = parents ? parents.length + 1 : 1;
+            result = Math.max(depth, result); 
+        });
+
+        return result;
+    }
+
+    console.log(solution2());
+    console.log(solution3());
+</script>
